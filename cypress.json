@@ -1,0 +1,7 @@
+{
+  "video": false,
+  "env": {
+    "login_id": "[your id]",
+    "login_password": "[your password]"
+  }
+}

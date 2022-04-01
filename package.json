@@ -1,0 +1,22 @@
+{
+  "name": "king_of_time_kintai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetsuyaohira/king_of_time_kintai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tetsuyaohira/king_of_time_kintai/issues"
+  },
+  "homepage": "https://github.com/tetsuyaohira/king_of_time_kintai#readme",
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  }
+}
