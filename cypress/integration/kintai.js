@@ -10,10 +10,16 @@ describe('kintai', () => {
         const dt = new Date();
         if (dt.getHours() === 9) {
             // 出勤
-            // cy.contains('出勤').click()
+            cy.contains('出勤').click()
+        } else if (dt.getHours() === 12) {
+            // 休始
+            cy.contains('休始').click()
+        } else if (dt.getHours() === 13) {
+            // 休終
+            cy.contains('休終').click()
         } else if (dt.getHours() === 18) {
             // 退勤
-            // cy.contains('退勤').click()
+            cy.contains('退勤').click()
         }
     })
 })
