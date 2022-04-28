@@ -3,11 +3,15 @@ describe('kintai', () => {
         cy.visit('https://s2.kingtime.jp/independent/recorder/personal/')
     })
     it('displays two todo items by default', () => {
+        const dt = new Date();
+        const holidayJp = require('@holiday-jp/holiday_jp');
+        console.log(holidayJp.isHoliday(dt));
+        if (holidayJp.isHoliday(dt)) return false;
+
         cy.get('#id').type(Cypress.env('login_id'))
         cy.get('#password').type(Cypress.env('login_password'))
         cy.get('.btn-control-message').click()
 
-        const dt = new Date();
         if (dt.getHours() === 9) {
             // 出勤
             cy.contains('出勤').click()

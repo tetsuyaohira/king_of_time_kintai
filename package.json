@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tetsuyaohira/king_of_time_kintai#readme",
   "devDependencies": {
     "cypress": "^9.5.3"
+  },
+  "dependencies": {
+    "@holiday-jp/holiday_jp": "^2.3.0"
   }
 }
