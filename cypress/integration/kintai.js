@@ -5,7 +5,7 @@ describe('kintai', () => {
     beforeEach(() => {
     })
 
-    it('displays two todo items by default', () => {
+    it('Time-based stamp.', () => {
         const dt = new Date();
         if (holidayJp.isHoliday(dt)) return false;
 
